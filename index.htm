@@ -151,7 +151,7 @@ value++;
 	document.getElementById("lab1").innerHTML = "";
 	document.getElementById("anshun").value = "";
 	document.getElementById('tov').disabled = true;
-	document.getElementById('ellenőrzés').disabled = false;
+	document.getElementById('verify').disabled = false;
 	document.getElementById('gam').value = ++gamall;
 	}	
 var i = 0;
@@ -197,7 +197,7 @@ document.onkeypress = function keypressed(){
   if (window.event.keyCode == 13 && document.getElementById('tov').disabled == false){
   document.getElementById('tov').click()}
   else if(window.event.keyCode == 13 && document.getElementById('tov').disabled == true){
-  document.getElementById('ellenőrzés').click()}}
+  document.getElementById('verify').click()}}
    </script>
    <p id="num" style="visibility:hidden"></p>
 <table style="position: absolute; top: 50%; left: 50%; margin-top: -195px; margin-left: +275px; z-index:1">

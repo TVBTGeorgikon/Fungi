@@ -163,7 +163,7 @@ mar = array_pic[0]['picture'];
 document.getElementById('pict1').src=array_quiz[i][mar]});
 
 function correct(){ document.getElementById('tov').disabled = false;
-document.getElementById('ellenőrzés').disabled = true;
+document.getElementById('verify').disabled = true;
 var q=document.getElementById('res1').value;
 var x=document.getElementById('res2').value;
 var ansh0=document.getElementById('anshun').value;
@@ -208,7 +208,7 @@ document.onkeypress = function keypressed(){
 <table style="position: absolute; top: 50%; left: 50%; margin-top: +285px; margin-left: -220px; z-index:1">
   <tr><td align="right">Magyar név: </td><td><input type="text", id="anshun"></td><td><p id="lab1" style="visibility:visible"></p></td></tr>
 </table>
-<input type="button" id="ellenőrzés" value="Kész!" onclick="correct()" style="position: absolute; top: 50%; left: 50%; margin-top: +325px; margin-left: -131px; z-index:1">
+<input type="button" id="verify" value="Kész!" onclick="correct()" style="position: absolute; top: 50%; left: 50%; margin-top: +325px; margin-left: -131px; z-index:1">
 <input type="button" id="tov" value="Következő" onclick="change()" style="position: absolute; top: 50%; left: 50%; margin-top: +325px; margin-left: -57px; z-index:1">
 <input type="button" value="Új kvíz" onClick="window.location.reload()" style="position: absolute; top: 50%; left: 50%; margin-top: -105px; margin-left: +325px; z-index:1">
 </body>
